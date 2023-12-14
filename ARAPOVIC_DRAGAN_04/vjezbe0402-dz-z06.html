@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    	function zbroji(){
+    		var brojX = document.getElementById('X').value;
+    		var brojY = document.getElementById('Y').value;
+    		var rezultat = +brojX + +brojY;
+    		document.getElementById('rezultat').value = rezultat;
+    	}
+    </script>
+</head>
+<body>
+	<form>
+		<label for="X">X = </label>
+		<input type="text" id="X" name="X" value=""><br>
+		<label for="Y">Y = </label>
+		<input type="text" id="Y" name="Y" value=""><br><br>
+		<input type="button" value="Zbroji" onclick="zbroji()">
+		<hr>
+		<label for="rezultat">REZULTAT : </label>
+		<input type="text" id="rezultat" name="rezultat"><br>
+	</form> 
+</body>
+</html>
+

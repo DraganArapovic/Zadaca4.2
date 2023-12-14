@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		function upali(){
+			document.body.innerHTML = '';
+			document.write('<img id="prekidacUpaljen" src="on-removebg-preview.png" onclick="ugasi()"><img id="zaruljaUpaljena" src="zarulja_on_2.png">')
+		}
+		function ugasi(){
+			document.body.innerHTML = '';
+			document.write('<img id="prekidacUgasen" src="off-removebg-preview.png" onclick="upali()"><img id="zaruljaUgasena" src="zarulja_off_2.png">')
+		}
+	</script>
+</head>
+<body>
+	<img id="prekidacUgasen" src="off-removebg-preview.png" onclick="upali()">
+	<img id="zaruljaUgasena" src="zarulja_off_2.png">
+</body>
+</html>
